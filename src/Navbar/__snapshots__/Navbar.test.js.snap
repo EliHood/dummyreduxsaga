@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render <Navbar/>  should snapshot navbar 1`] = `
+<BrowserRouter>
+  <WithStyles(ForwardRef(AppBar))
+    position="static"
+  >
+    <WithStyles(ForwardRef(Toolbar))>
+      <WithStyles(ForwardRef(Grid))
+        container={true}
+        justify="space-between"
+      >
+        <WithStyles(ForwardRef(Typography))
+          style={
+            Object {
+              "color": "#fff",
+            }
+          }
+          variant="h6"
+        >
+          Boilerplate
+        </WithStyles(ForwardRef(Typography))>
+        <WithStyles(ForwardRef(Grid))
+          item={true}
+        >
+          <WithStyles(ForwardRef(Button))
+            align="right"
+          >
+            <Link
+              style={
+                Object {
+                  "color": "#fff",
+                  "textDecoration": "none",
+                }
+              }
+              to="/"
+              underline="none"
+            >
+              Home
+            </Link>
+          </WithStyles(ForwardRef(Button))>
+        </WithStyles(ForwardRef(Grid))>
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Toolbar))>
+  </WithStyles(ForwardRef(AppBar))>
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+</BrowserRouter>
+`;

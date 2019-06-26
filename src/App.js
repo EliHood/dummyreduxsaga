@@ -12,7 +12,7 @@ class App extends Component {
         <Navbar/>
          <Grid container>
 
-           
+          
          </Grid>
       </div>
     );

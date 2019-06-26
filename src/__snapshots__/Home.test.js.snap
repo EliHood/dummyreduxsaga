@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render <Home/> Component should match <Home/> snapshot 1`] = `
+<div
+  className="main"
+>
+  <h2>
+    Home
+  </h2>
+</div>
+`;
+
+exports[`Should render <Home/> Component should match snapShot 1`] = `
+<div
+  className="main"
+>
+  <h2>
+    Home
+  </h2>
+</div>
+`;
