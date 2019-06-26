@@ -29,9 +29,9 @@ const Navbar = () => (
            </Grid>
            </Toolbar>
         </AppBar>
-        <Switch>
-        <Route path="/" component={Home} />
-        </Switch>
+   
+        <Route exact path="/" component={Home} />
+      
     </Router>
 )
 export default Navbar;

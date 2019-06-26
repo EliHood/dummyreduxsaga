@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Navbar from './Navbar/Navbar';
-import logo from './logo.svg';
+
 import Grid from '@material-ui/core/Grid';
 import './App.css';
 
