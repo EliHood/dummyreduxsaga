@@ -11,3 +11,5 @@
 
 - `git clone https://github.com/EliHood/dummyreduxsaga.git`
 - `npm install`
+
+### then open console.log
