@@ -2,7 +2,7 @@ import {put, fork, takeLatest, call} from 'redux-saga/effects';
 import {GET_DATA_SAGA} from '../actions/types';
 import api from '../api';
 import {fetchDataSuccess, fetchDataError } from '../actions/dataActions';
-export function* getData(action){
+export function* getData(){
     try{
         const data = yield call(api.json.getData);
 

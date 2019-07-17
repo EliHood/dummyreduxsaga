@@ -8,19 +8,16 @@ class Home extends Component{
         stateData:[]
     }
     componentDidMount(){
-        this.props.fetchDataInit();
+        this.props.fetchDataInit()
     }
     componentWillUpdate(prevProps){
-        console.log(prevProps.data.data)
         if(this.props.data.data !== prevProps.data.data){
             this.setState({
                 hide:false,
-                stateData: this.props.data.data
-            })
+            })      
         }
    }
     render(){
-        console.log(this.state.stateData)
         const {hide} = this.state
         if(hide){
             return(
@@ -30,15 +27,12 @@ class Home extends Component{
         return(
            <div>
                 <h1>Welcome Home</h1>
-                {this.state.hide ? (
-                     this.state.stateData.map( (data, i) => (
-                        <div key={i}>
-                            <h3>{data.title}</h3>
-                      </div>
-                    ))
-                ):(
-                    null
-                )}
+                {this.props.data.data.map( (item, i) => (
+                    <div key={i}> 
+                        <h4>{item.title}</h4>
+                        <small>{item.completed.toString()}</small>
+                    </div>
+                ))}
            </div>
         )
     }
