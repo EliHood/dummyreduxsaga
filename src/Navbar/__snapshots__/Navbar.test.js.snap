@@ -44,7 +44,15 @@ exports[`Should render <Navbar/>  should snapshot navbar 1`] = `
     </WithStyles(ForwardRef(Toolbar))>
   </WithStyles(ForwardRef(AppBar))>
   <Route
-    component={[Function]}
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(Home)",
+        "type": [Function],
+      }
+    }
     exact={true}
     path="/"
   />

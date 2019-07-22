@@ -4,9 +4,21 @@ exports[`Should render App component should snapshot Navbar 1`] = `
 <div
   className="App"
 >
-  <Navbar />
-  <WithStyles(ForwardRef(Grid))
-    container={true}
-  />
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <Navbar />
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+    />
+  </Provider>
 </div>
 `;

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
-import {fetchDataInit} from './actions/dataActions';
+import PropTypes from 'prop-types'; 
 class Home extends Component{
+    static defaultProps = {
+       fetchDataInit: () => {}
+    }
     state = {
         hide:true,
         data:[],
@@ -37,10 +39,5 @@ class Home extends Component{
         )
     }
 }
-const mapStateToProps = (state) => ({
-    data: state.data,
- })
- const mapDispatchToProps = (dispatch) => ({
-    fetchDataInit: () => dispatch(fetchDataInit()),
- })
- export default connect(mapStateToProps, mapDispatchToProps)(Home)
+
+export default Home

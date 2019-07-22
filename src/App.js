@@ -1,19 +1,18 @@
-import React, {Component} from 'react';
-import Navbar from './Navbar/Navbar';
+import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import store from './store';
 import Grid from '@material-ui/core/Grid';
+import Navbar from './Navbar/Navbar';
+import store from './store';
 import './App.css';
+
 class App extends Component {
-  render(){
+  render() {
     return (
       <div className="App">
         <Provider store={store}>
-          <Navbar/>
-            <Grid container>
-              
-            </Grid>
-         </Provider>
+          <Navbar />
+          <Grid container />
+        </Provider>
       </div>
     );
   }
